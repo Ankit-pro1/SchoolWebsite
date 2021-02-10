@@ -1,0 +1,307 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**********************Utility Classes****************/
+input,
+input:active,
+input:focus,
+.btn,
+.btn:active,
+.btn:focus{
+    box-shadow: none;
+    outline: none;
+}
+input,
+input:active,
+input:focus{
+    box-shadow: none;
+}
+.padding{
+    padding: 30px 0px;
+}
+.heading{
+    position: relative;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+/* .heading::after{
+    position: absolute;
+    content: "";
+    bottom: -10px;
+    left: 50%;
+    width: 122px;
+    height: 4px;
+    background-color: rgb(0, 128, 0);
+} */
+.btn-black{
+    background-color: #000;
+    color: #fff;
+    padding: 10px 12px;
+    font-size: 18px;
+    border-radius: 6px;
+    outline: none;
+    border: 2px solid transparent;
+    transition: all ease 0.3s;
+}
+.btn-black:hover{
+    background-color: #fff;
+    border: 2px solid #000;
+    color: #000;
+}
+/*************XX*********Utility Classes*********XX********/
+
+/**************** Navigation Bar ********************/
+#header{
+    background-color: rgb(0, 128, 0);
+}
+#header .nav-brand{
+    font-size: 20px;
+}
+.dropdown-menu{
+    top: 90%;
+}
+#header .dropdown-menu .dropdown-item:focus{
+    background-color: rgb(0, 128, 0);
+}
+#header .nav-item:hover .dropdown-menu{
+    display: block;
+}
+#header .nav-link{
+    color: #fff;
+    padding: 10px 16px;
+    transition: all ease 0.3;
+}
+#header .nav-link:hover{
+    opacity: 0.8;
+}
+/**********XX****** Navigation Bar ************XX********/
+
+/******************** Carousel ***********************/
+.carousel-item img{
+    width: 100%;
+    height: 80vh;
+}
+.carousel-caption{
+    top: 100px;
+    text-align: left;
+}
+.carousel-caption h1{
+    font-weight: 600;
+}
+.carousel-caption p{
+    font-weight: 400;
+}
+
+/*************XX******* Carousel **********XX*************/
+
+
+/******************** About Us Section ****************/
+.about-us{
+    background-color: #ecf0f1;
+}
+.left-about{
+    position: relative;
+    width: 400px;
+    text-align: center;
+    display: inline-block;
+}
+.left-about img{
+    display: block;
+    width: 100%;
+    border-radius: 50%;
+    border: 4px solid rgb(0, 128, 0);
+    /* filter: blur(4px);
+    -webkit-filter: blur(4px); */
+}
+.left-about-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    padding: 140px 30px 0 30px;
+    opacity: 0;
+    transition: all ease 0.3s;
+    color: #fff;
+}
+.left-about:hover .left-about-overlay{
+    opacity: 1;
+}
+.left-about-overlay .btn-black{
+    padding: 8px 12px;
+    font-size: 14px;
+}
+.about-card-title{
+    font-weight: 600;
+}
+.about-card-text{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.about-right{
+    margin-top: 60px;
+}
+.about-right p{
+    margin: 20px 0;
+    font-weight: 400;
+    line-height: 28px;
+}
+/************XX******** About Us Section **********XX******/
+
+/*********************Faculty Section ******************/
+.faculty .card{
+    border: 2px solid rgb(0, 128, 0);
+    transition: all ease-in 0.3s;    
+}
+.faculty .card img{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    object-fit: contain;
+}
+.faculty .card-body{
+    transition: all ease-in 0.3s; 
+}
+.faculty .card:hover .card-body{
+    background-color: rgba(0, 128, 0, 0.8);
+}
+.faculty .card:hover .card-title,.faculty .card:hover .card-text{
+    color: #fff;
+}
+.faculty .btn-black{  
+    padding: 6px 10px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+.owl-dots{
+    margin-top: 20px;
+    text-align: center;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid rgb(0, 128, 0)!important;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+}
+.owl-dot.active, .owl-dot:hover{
+    background: rgb(0, 128, 0)!important;
+}
+/**************XX*******Faculty Section *********XX*********/
+
+/************************ FAQ ***********************/
+.faq{
+    background: #ecf0f1;
+}
+.faq.padding{
+    padding-bottom: 50px;
+}
+.faq .card-header{
+    padding: 0%;
+}
+.faq .btn{
+    padding: 14px 0;
+    background-color: rgb(0, 128, 0);
+    color: #fff;
+}
+.faq .btn.collapsed{
+    background-color:#a4b0be;
+    color: #000;
+}
+/***************XX********* FAQ **********XX************/
+
+/********************** Contact Us *********************/
+.form-group{
+    margin-bottom: 10px;
+}
+.form-group text-area{
+    resize: none;
+}
+.form-group input:focus, .form-group textarea:focus{
+    box-shadow: none;
+    border: 2px solid rgb(0, 128, 0);
+}
+
+/*************XX********* Contact Us *********XX************/
+
+/*******************Footer Section ***********************/
+.footer{
+    background-color: #2d3436;
+    color: #fff;
+    padding: 6px 0;
+}
+.footer p{
+    margin-bottom: 0%;
+}
+/************XX*******Footer Section **********XX*************/
+/********************** Media Query ****************/
+@media screen and (max-width:768px){
+    .carousel-item img{
+        height: 70vh;
+    }
+    .carousel-caption{
+        top: 70px;
+        text-align: left;
+    }
+    .carousel-caption h1{
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    .carousel-caption p{
+        font-weight: 300;
+        font-size: 16px;
+    }
+    form{
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width:576px){
+    .carousel-item img{
+        height: 45vh;
+    }
+    .carousel-caption{
+        top: 20px;
+        text-align: left;
+    }
+    .carousel-caption h1{
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    .carousel-btn .btn{
+        padding: 6px 8px;
+        font-size: 14px;
+    }
+    .carousel-caption p{
+        font-weight: 300;
+        font-size: 14px;
+    }
+
+    .left-about{
+        width: 300px;
+    }
+    .left-about-overlay {
+        padding: 77px 8px 0px 8px;
+    }
+    .about-right{
+        margin-top: 30px;
+    }
+    .faculty .card{
+        margin: 0 14px;
+    }
+
+    .owl-dot{
+        height: 10px;
+        width: 10px;
+    }
+}
